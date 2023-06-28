@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+     .modal-dialog:hover{
+        transform: rotate(360deg);
+     } 
+    form{
+        width: 400px;
+        background-color: skyblue;
+        background-image: linear-gradient(rgba(227, 219, 148, 0.403), rgba(213, 162, 35, 0.403), rgba(35, 213, 192, 0.746));
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Welcome</h2>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open </button>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+  
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">photo is below</h4>
+        </div>
+        <div class="modal-body">
+            <div class="container1">
+                <form>
+                    <fieldset>
+                        <legend><h3>Registration Form:</h3></legend>
+                        <label for="uname"><span class="fa-solid fa-user fa-lg"></span>&nbsp;&nbsp;Username: </label><br>
+                        <input type="text" name="uname"><br><br>
+        
+                        <label for="enrol">Enrollment No.: </label><br>
+                        <input type="number" name="enrol"><br><br>
+        
+                        <label for="pass"><span class="fa-solid fa-key fa-lg"></span>&nbsp;&nbsp;Password: </label><br>
+                        <input type="password" name="enrol"><br><br>
+        
+                        <p><span class="fa-solid fa-building-columns fa-lg"></span>&nbsp;&nbsp;Gender: </p>
+                        <input type="radio" name="male">
+                        <label for="male"><i class="fa-solid fa-child fa-lg"></i>&nbsp;&nbsp;Male</label>
+                        <input type="radio" name="female">
+                        <label for="female"><i class="fa-solid fa-child-dress fa-lg"></i>&nbsp;&nbsp;Female</label><br><br>
+        
+                        <p><span class="fa-solid fa-building-columns fa-lg"></span>&nbsp;&nbsp;College: </p>
+                        <input type="checkbox" name="clg1">
+                        <label for="clg1">ASOIT</label>
+                        <input type="checkbox" name="clg2">
+                        <label for="clg2">SOCET</label>
+                        <br><br><br><br>
+        
+                        <input type="submit" value="Sign Up">
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
