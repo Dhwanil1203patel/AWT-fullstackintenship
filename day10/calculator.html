@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let operator = prompt('Enter operator to perform the calculation ( either 0, 1, 2 ,3 or 4 ): ');  
+  
+ 
+        let a = parseFloat(prompt ('Enter the first number: '));  
+        let b = parseFloat(prompt ('Enter the second number: '));  
+        switch(operator){
+             case '0':
+            let Addition= a + b;
+            console.log(Addition);
+            break;
+
+            case '1':
+            let Subtraction= a - b;
+            console.log(Subtraction);
+            break;
+
+            case '2':
+            let Multi= a * b;
+            console.log(Multi);
+            break;
+
+            case '3':
+            let Division= a / b;
+            console.log(Division);
+            break;
+
+            case '4':
+            let Module= a % b;
+            console.log(Module);
+            break;
+        }
+    </script>
+</body>
+</html>

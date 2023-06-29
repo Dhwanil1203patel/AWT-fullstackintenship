@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        input{
+            padding: 26px;
+        }
+        .dp{
+            border-radius: 70px;
+   
+        }
+        .dpe{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #calc{
+            padding: 15px 48px;
+        }
+        #Clear{
+            padding: 10px 104px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="dp">
+        <h2>Calculator</h2>
+        <div class="dpe">
+            <form name="dhp">
+                <input type="text" name="dhwanil" id="calc"><br><br>
+
+                <input type="button" value="0" onclick="dhp.dhwanil.value +='0'">
+                <input type="button" value="1" onclick="dhp.dhwanil.value +='1'">
+                <input type="button" value="2" onclick="dhp.dhwanil.value +='2'">
+                <input type="button" value="+" onclick="dhp.dhwanil.value +='+'"><br><br>    
+         
+                <input type="button" value="3" onclick="dhp.dhwanil.value +='3'">
+                <input type="button" value="4" onclick="dhp.dhwanil.value +='4'">
+                <input type="button" value="5" onclick="dhp.dhwanil.value +='5'">
+                <input type="button" value="-" onclick="dhp.dhwanil.value +='-'"><br><br>
+
+                <input type="button" value="6" onclick="dhp.dhwanil.value +='6'">
+                <input type="button" value="7" onclick="dhp.dhwanil.value +='7'">
+                <input type="button" value="8" onclick="dhp.dhwanil.value +='8'">
+                <input type="button" value="9" onclick="dhp.dhwanil.value +='9'"><br><br>
+        
+        
+                <input type="button" value="*" onclick="dhp.dhwanil.value +='*'">
+                <input type="button" value="/" onclick="dhp.dhwanil.value +='/'">
+                <input type="button" value="%" onclick="dhp.dhwanil.value +='%'">
+                <input type="button" value="=" onclick="dhp.dhwanil.value =eval(dhp.dhwanil.value)"><br><br>
+
+                <input type="button" value="Clear All" id="Clear" onclick="dhp.dhwanil.value=''">
+                </form>
+        </div>
+    </fieldset>
+</body>
+</html>
