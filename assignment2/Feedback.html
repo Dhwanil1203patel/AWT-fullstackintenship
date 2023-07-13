@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title> Feedback</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #4e54c8;
+      background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+      background: linear-gradient(to right, #8f94fb, #4e54c8);
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .panel-container {
+      background-color: #12192c;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      font-size: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      max-width: 400px;
+      color: #4e54c8;
+      margin: 10% auto 2% auto;
+    }
+
+    .panel-container strong {
+      line-height: 20px;
+    }
+
+    .ratings-container {
+      display: flex;
+      margin: 20px 0;
+    }
+
+    .rating {
+      flex: 1;
+      cursor: pointer;
+      padding: 20px;
+      margin: 10px 5px;
+    }
+
+    .rating:hover,
+    .rating.active {
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .rating img {
+      width: 40px;
+    }
+
+    .rating small {
+      color: #fff;
+      display: inline-block;
+      margin: 10px 0 0;
+    }
+
+    .rating:hover small,
+    .rating.active small {
+      color: #8f94fb;
+    }
+
+    .btn {
+      background-color: #8f94fb;
+      color: #000;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 30px;
+      cursor: pointer;
+    }
+
+    .btn:focus {
+      outline: 0;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .fa-heart {
+      color: red;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+
+    .credit a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .credit {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="panel" class="panel-container">
+    <div class="form-popup" id="myForm">
+      <form class="form-container" onsubmit="a1()">
+        <div class="container">
+
+          <div class="col-md-3"></div>
+
+          <div class="col-md-6"></div>
+          <div class="head1">
+            <h2>Send Your Feedback!</h2>
+          </div>
+          <br><br>
+          <h5>Name</h5>
+          <input type="text" name="Name">
+          <h5>Email</h5>
+          <input type="text">
+          <h5>What was the reason for visit?</h5>
+          <div class="row">
+            <div class="col-md-12">
+              <select class="control">
+                <option selected disabled="">Select</option>
+                <option>Information</option>
+                <option>About website</option>
+                <option>Other Reason</option>
+
+              </select>
+            </div>
+          </div>
+
+          <h6>Do you have any seggestion to make my website better?</h6>
+          <textarea class="control" required=""></textarea>
+          <br><br>
+
+
+
+          <div class="col-md-3"></div>
+
+          <button class="btn" id="send" type="submit">Send Review</button>
+        </div>
+      </form>
+    </div>
+
+    </form>
+  </div>
+
+  <script>
+    function a1() {
+      alert("Your form is submited ");
+    }
+  </script>
+
+  <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="assignment.html">Dhwanil patel</a></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
